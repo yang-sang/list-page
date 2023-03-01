@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+        <div class="container">
+            <div class="header">
+                <img class="logo" src="./img/mainFrameTitle_light_extend.png" alt="">
+                <div class="window_tools">
+                    <img class="hide_icon" src="./img/mind2691e.png" alt="">
+                    <img class="fullscreen_icon" src="./img/recoverd2691e.png" alt="">
+                    <img class="close_icon" src="./img/closed2691e.png" alt="">
+                </div>
+                <div class="header_tools">
+                    <div class="header_tools_control">
+                        <img src="./img/routeBack_ffffff.png" alt="">
+                        <img src="./img/routeForward_ffffff.png" alt="">
+                        <img src="./img/dataUpdate_ffffff.png" alt="">
+                        <img src="./img/zoomIn2_ffffff.png" alt="">
+                        <span>100%</span>
+                        <img src="./img/zoomOut2_ffffff.png" alt="">
+                    </div>
+                    <div class="user_info">
+                        <span class="name">李明</span>
+                        <img class="avatar" src="./img/user_cccccc.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main_header">
+                    <h3>票据列表</h3>
+                    <div class="tools">
+                        <button onclick="handleAdd()">新增</button>
+                        <button onclick="handleDel()">删除</button>
+                        <span>金额单位：元</span>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr tabindex="1" class="table_header">
+                            <th>
+                                <input type="checkbox" onchange="handleAllCheckbox(this)">
+                            </th>
+                            <th>序号</th>
+                            <th>类型</th>
+                            <th>税前金额</th>
+                            <th>税额</th>
+                            <th>税价合计</th>
+                            <th>日期</th>
+                            <th>合计</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr tabindex="2" class="table_item">
+                            <td>
+                                <input type="checkbox" onchange="handleSingleCheckbox(this)">
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>定额票</td>
+                            <td ondblclick="handleDbclick(this)"></td>
+                            <td ondblclick="handleDbclick(this)"></td>
+                            <td>6.00</td>
+                            <td>2022-12-08</td>
+                            <td></td>
+                        </tr>
+                        <tr  tabindex="3" class="table_item">
+                            <td>
+                                <input type="checkbox" onchange="handleSingleCheckbox(this)">
+                            </td>
+                            <td>
+                               2
+                            </td>
+                            <td>定额票</td>
+                            <td ondblclick="handleDbclick(this)"></td>
+                            <td ondblclick="handleDbclick(this)"></td>
+                            <td>6.00</td>
+                            <td>2022-12-08</td>
+                            <td></td>
+                        </tr>
+                        <tr tabindex="4" class="table_item">
+                            <td>
+                                <input type="checkbox" onchange="handleSingleCheckbox(this)">
+                            </td>
+                            <td>
+                                3
+                            </td>
+                            <td>定额票</td>
+                            <td ondblclick="handleDbclick(this)"></td>
+                            <td ondblclick="handleDbclick(this)"></td>
+                            <td>6.00</td>
+                            <td>2022-12-08</td>
+                            <td></td>
+                        </tr>
+                        <tr tabindex="5" class="table_item">
+                            <td>
+                                <input type="checkbox" onchange="handleSingleCheckbox(this)">
+                            </td>
+                            <td>
+                                4
+                            </td>
+                            <td>定额票</td>
+                            <td ondblclick="handleDbclick(this)"></td>
+                            <td ondblclick="handleDbclick(this)"></td>
+                            <td>6.00</td>
+                            <td>2022-12-08</td>
+                            <td></td>
+                        </tr>
+                        
+                    </tbody>
+                    <tfoot class="table_footer">
+                        <tr tabindex="6" class="table_item">
+                            <td>
+                            </td>
+                            <td>
+                                合计
+                            </td>
+                            <td></td>
+                            <td id="beforeTax">100</td>
+                            <td id="tax">120</td>
+                            <td id="totalTaxPrice">6.00</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+                <ul class="footer">
+                    <li>首页</li>
+                    <li>审批</li>
+                    <li>票据</li>
+                    <li>日常报销单</li>
+                    <li>借款单</li>
+                    <li>差旅报销单</li>
+                    <li>附件</li>
+                    <li>资金</li>
+                    <li>会计凭证</li>
+                    <li>会计项目</li>
+                    <li>委托管理</li>
+                </ul>
+        </div>
+       
+    <script src="./js/main.js"></script>
+</body>
+</html>
