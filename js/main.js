@@ -65,6 +65,7 @@ const handleDel = () => {
     if (item.checked) item.parentElement.parentElement.remove();
   });
   handleIndex();
+  count();
 };
 //双击事件
 const handleDbclick = (self) => {
